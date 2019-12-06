@@ -1,0 +1,24 @@
+{
+	"MyActivityApp":{
+		"Activity1" : {
+			"titleActivity" : "Do work",
+			"descActivity" : "c++",
+			"dateActivity" : "Tomorrow"
+		},
+		
+		"Activity2" : {
+			"titleActivity" : "Go to market",
+			"descActivity" : "Bring yoghurt",
+			"dateActivity" : "Aug 17"
+		},
+		
+		"Activity3" : {
+			"titleActivity" : "Do assignment",
+			"descActivity" : "dsa",
+			"dateActivity" : "Aug 20"
+		}
+	}
+}
+
+		
+		
