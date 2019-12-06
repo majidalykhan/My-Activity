@@ -17,39 +17,41 @@
             android:id="@+id/activityTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
             android:fontFamily="@font/antic_slab"
             android:text="My Activity 1"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textColor="#232020"></TextView>
 
         <TextView
             android:id="@+id/activityDescription"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:fontFamily="@font/antic_slab"
             android:text="My Activity Description"
-            android:textSize="20sp"></TextView>
+            android:textSize="15sp"></TextView>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="30dp">
 
         <TextView
             android:id="@+id/date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="30dp"
             android:fontFamily="@font/days_one"
             android:text="Tomorrow"
             android:textAlignment="center"
             android:textColor="#9d0b0b"
-            android:textSize="20sp"></TextView>
+            android:textSize="15sp"></TextView>
 
     </LinearLayout>
 
