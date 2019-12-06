@@ -30,6 +30,7 @@ public class AddActivity extends AppCompatActivity {
     ImageButton create, cancel;
     DatabaseReference reference;
     Integer activityNum = new Random().nextInt();
+    String keyActivity = Integer.toString(activityNum);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -93,6 +94,7 @@ public class AddActivity extends AppCompatActivity {
                         dataSnapshot.getRef().child("titleActivity").setValue(editNewActivity.getText().toString());
                         dataSnapshot.getRef().child("descActivity").setValue(editDesc.getText().toString());
                         dataSnapshot.getRef().child("dateActivity").setValue(editDate.getText().toString());
+                        dataSnapshot.getRef().child("keyActivity").setValue(keyActivity);
 
                         Intent a = new Intent(AddActivity.this, MainActivity.class);
                         startActivity(a);

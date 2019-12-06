@@ -12,7 +12,7 @@
        android:layout_width="match_parent"
        android:layout_height="170dp"
        android:orientation="vertical"
-       android:background="#ff7315">
+       android:background="#1a2849">
 
       <LinearLayout
           android:orientation="horizontal"

@@ -22,7 +22,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/cutive"
-            android:text="New Activity"
+            android:text="Edit Activity"
             android:textAlignment="center"
             android:textColor="#fff"
             android:textSize="30sp"></TextView>
@@ -147,7 +147,7 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/createBtn"
+                android:id="@+id/saveBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@null"
@@ -155,7 +155,7 @@
                 tools:ignore="VectorDrawableCompat" />
 
             <TextView
-                android:id="@+id/CreateActivity"
+                android:id="@+id/SaveActivity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -163,7 +163,7 @@
                 android:layout_marginTop="-37dp"
                 android:textColor="#fff"
                 android:textSize="18sp"
-                android:text="Create New Activity"
+                android:text="Save Activity"
                 ></TextView>
 
         </LinearLayout>
@@ -178,7 +178,7 @@
 
 
             <ImageButton
-                android:id="@+id/cancelBtn"
+                android:id="@+id/deleteBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@null"
@@ -186,7 +186,7 @@
                 tools:ignore="VectorDrawableCompat" />
 
             <TextView
-                android:id="@+id/CancelActivity"
+                android:id="@+id/DeleteActivity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="5dp"
@@ -194,7 +194,7 @@
                 android:layout_marginTop="-32dp"
                 android:textColor="#fff"
                 android:textSize="18sp"
-                android:text="Cancel"
+                android:text="Delete"
                 ></TextView>
 
         </LinearLayout>
