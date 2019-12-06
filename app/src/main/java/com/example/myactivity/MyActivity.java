@@ -2,7 +2,9 @@ package com.example.myactivity;
 
 public class MyActivity {
 
-    String titleActivity, descActivity, dateActivity;
+    String titleActivity;
+    String descActivity;
+    String dateActivity;
 
     public MyActivity() {
     }
