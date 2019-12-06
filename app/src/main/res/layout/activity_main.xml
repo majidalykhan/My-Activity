@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="f4f4f4"
+    android:background="#f4f4f4"
     tools:context=".MainActivity">
 
    <LinearLayout
@@ -45,6 +45,7 @@
       </LinearLayout>
 
    <androidx.recyclerview.widget.RecyclerView
+       android:id="@+id/ourActvities"
        android:layout_width="match_parent"
        android:layout_height="wrap_content"
        android:layout_marginTop="-30dp"
