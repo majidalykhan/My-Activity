@@ -5,8 +5,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.graphics.Typeface;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -27,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
     ArrayList<MyActivity> list;
     ActivityAdapter activityAdapter;
 
+    ImageButton newActivity;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +43,16 @@ public class MainActivity extends AppCompatActivity {
         appTitle = findViewById(R.id.Apptitle);
         finishTasks = findViewById(R.id.finishTasks);
         nomoreTasks = findViewById(R.id.nomoretasks);
+        newActivity = findViewById(R.id.addBtn);
+
+
+        newActivity.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent a =  new Intent(MainActivity.this, AddActivity.class);
+                startActivity(a);
+            }
+        });
 
 
         //Work with Data

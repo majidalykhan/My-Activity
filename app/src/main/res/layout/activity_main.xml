@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f4f4f4"
+    android:background="#e5dfdf"
     tools:context=".MainActivity">
 
    <LinearLayout
@@ -14,28 +14,53 @@
        android:orientation="vertical"
        android:background="#ff7315">
 
-
-      <TextView
-          android:id="@+id/Apptitle"
+      <LinearLayout
+          android:orientation="horizontal"
+          android:layout_marginTop="-10dp"
           android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="50dp"
-          android:fontFamily="@font/cutive"
-          android:text="My Activity"
-          android:textAlignment="center"
-          android:textColor="#fff"
-          android:textSize="30sp"></TextView>
+          android:layout_height="wrap_content">
 
-      <TextView
-          android:id="@+id/finishTasks"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:layout_marginTop="10dp"
-          android:textColor="#fff"
-          android:text="Finish them today"
-          android:textAlignment="center"
-          android:textSize="18sp"
-          ></TextView>
+         <LinearLayout
+             android:orientation="vertical"
+             android:layout_marginLeft="20dp"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Apptitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="@font/cutive"
+                android:text="My Activity"
+                android:textColor="#fff"
+                android:textSize="30sp"></TextView>
+
+            <TextView
+                android:id="@+id/finishTasks"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#fff"
+                android:text="Finish them today"
+                android:textSize="18sp"
+                ></TextView>
+
+         </LinearLayout>
+
+         <ImageButton
+             android:id="@+id/addBtn"
+             android:layout_width="98dp"
+             android:layout_height="73dp"
+             android:layout_marginLeft="60dp"
+             android:layout_marginTop="50dp"
+             android:background="@null"
+             app:srcCompat="@drawable/ic_plus"
+             tools:ignore="VectorDrawableCompat" />
+
+      </LinearLayout>
+
+
 
       <View
           android:layout_marginTop="20dp"
@@ -63,7 +88,5 @@
        android:text="No more activities"
        android:textAlignment="center"
        android:textSize="18sp"></TextView>
-
-
 
 </LinearLayout>

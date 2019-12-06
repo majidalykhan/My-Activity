@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="150dp"
     android:background="#fff"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:layout_marginBottom="20dp">
 
 
     <LinearLayout
@@ -49,7 +50,6 @@
             android:layout_marginTop="30dp"
             android:fontFamily="@font/days_one"
             android:text="Tomorrow"
-            android:textAlignment="center"
             android:textColor="#9d0b0b"
             android:textSize="15sp"></TextView>
 
