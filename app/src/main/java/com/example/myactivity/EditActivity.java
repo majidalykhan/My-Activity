@@ -9,7 +9,10 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -46,20 +49,21 @@ public class EditActivity extends AppCompatActivity {
 
         final String keykeyActivity = getIntent().getStringExtra("keyActivity");
 
+        reference = FirebaseDatabase.getInstance().getReference().child("MyActivityApp")
+                .child("Activity" + keykeyActivity);
+
         save.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                reference = FirebaseDatabase.getInstance().getReference().child("MyActivityApp")
-                        .child("Activity" + keykeyActivity);
                 reference.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                         dataSnapshot.getRef().child("titleActivity").setValue(editNewActivity.getText().toString());
                         dataSnapshot.getRef().child("descActivity").setValue(editDesc.getText().toString());
                         dataSnapshot.getRef().child("dateActivity").setValue(editDate.getText().toString());
-                        dataSnapshot.getRef().child("keyActivity").setValue(keykeyActivity);
 
                         Intent a = new Intent(EditActivity.this, MainActivity.class);
+                        a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         startActivity(a);
                     }
 
@@ -72,5 +76,28 @@ public class EditActivity extends AppCompatActivity {
 
             }
         });
+
+
+        delete.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                reference.removeValue().addOnCompleteListener(new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if(task.isSuccessful()){
+                            Intent a =  new Intent(EditActivity.this, MainActivity.class);
+                            a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            startActivity(a);
+                        }
+                        else{
+                            Toast.makeText(EditActivity.this,"Unable to delete",Toast.LENGTH_LONG).show();
+                        }
+
+                    }
+                });
+            }
+        });
+
+
     }
 }

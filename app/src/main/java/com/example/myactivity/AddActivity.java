@@ -97,6 +97,7 @@ public class AddActivity extends AppCompatActivity {
                         dataSnapshot.getRef().child("keyActivity").setValue(keyActivity);
 
                         Intent a = new Intent(AddActivity.this, MainActivity.class);
+                        a.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                         startActivity(a);
 
                     }
@@ -113,6 +114,11 @@ public class AddActivity extends AppCompatActivity {
         cancel.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Intent a = new Intent(AddActivity.this, MainActivity.class);
+                startActivity(a);
+                editNewActivity.getText().clear();
+                editDesc.getText().clear();
+                editDate.getText().clear();
 
             }
         });
