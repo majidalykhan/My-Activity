@@ -47,8 +47,8 @@
             android:id="@+id/date"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
-            android:fontFamily="@font/days_one"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/biryani"
             android:text="Tomorrow"
             android:textColor="#9d0b0b"
             android:textSize="15sp"></TextView>

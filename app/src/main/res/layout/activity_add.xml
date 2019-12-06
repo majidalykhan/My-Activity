@@ -128,7 +128,9 @@
                 android:id="@+id/titleAddDate"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:inputType="text"
+                android:clickable="true"
+                android:editable="false"
+                android:focusable="false"
                 android:hint="When to Do?"
                 android:textSize="18sp"
                 ></EditText>
@@ -145,7 +147,7 @@
             android:orientation="vertical">
 
             <ImageButton
-                android:id="@+id/imageButton"
+                android:id="@+id/createBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@null"
@@ -176,7 +178,7 @@
 
 
             <ImageButton
-                android:id="@+id/imageButton2"
+                android:id="@+id/cancelBtn"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@null"
