@@ -1,9 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="229" height="217" viewBox="0 0 229 217">
-  <g id="plus" transform="translate(-77 -103)">
-    <ellipse id="Ellipse_1" data-name="Ellipse 1" cx="114.5" cy="108.5" rx="114.5" ry="108.5" transform="translate(77 103)" fill="#94aa2a"/>
-    <g id="Group_1" data-name="Group 1" transform="translate(25 21)">
-      <line id="Line_1" data-name="Line 1" y2="78.084" transform="translate(166.152 151.5)" fill="none" stroke="#fff" stroke-width="10"/>
-      <line id="Line_2" data-name="Line 2" x2="79.914" transform="translate(126.5 190.542)" fill="none" stroke="#fff" stroke-width="10"/>
-    </g>
-  </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="229" height="217" viewBox="0 0 229 217"><g id="plus" transform="translate(-77 -103)"><ellipse id="Ellipse_1" cx="114.5" cy="108.5" fill="#94aa2a" data-name="Ellipse 1" rx="114.5" ry="108.5" transform="translate(77 103)"/><g id="Group_1" data-name="Group 1" transform="translate(25 21)"><line id="Line_1" y2="78.084" fill="none" stroke="#fff" stroke-width="10" data-name="Line 1" transform="translate(166.152 151.5)"/><line id="Line_2" x2="79.914" fill="none" stroke="#fff" stroke-width="10" data-name="Line 2" transform="translate(126.5 190.542)"/></g></g></svg>
